@@ -1,0 +1,560 @@
+﻿**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20220509160415
+Nome de Usuário: DESKTOP-QRT4O8M\lalau
+Executar como Usuário: DESKTOP-QRT4O8M\lalau
+Nome da Configuração: 
+Computador: DESKTOP-QRT4O8M (Microsoft Windows NT 10.0.19044.0)
+Aplicativo Host: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe -NoExit -NoProfile -NonInteractive -Command &{ Import-Module 'c:\program files\microsoft visual studio\2022\community\common7\ide\extensions\eac0bh4e.ymn\PowerShellProTools.VSCode.dll'; [PowerShellProTools.Common.ParentProcessWatcher]::WatchProcess(15904); }
+ID do Processo: 19328
+PSVersion: 5.1.19041.1237
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1237
+BuildVersion: 10.0.19041.1237
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é C:\Users\lalau\source\repos\PowerShellProject1\PSMORALOG\transcript.log
+PS>Get-PSCallstack | ConvertTo-Json -WarningAction SilentlyContinue
+[
+    {
+        "ScriptName":  "C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\PowerShellProject1\\PowerShellProject1.ps1",
+        "ScriptLineNumber":  35,
+        "InvocationInfo":  {
+                               "MyCommand":  "PowerShellProject1.ps1",
+                               "BoundParameters":  "System.Management.Automation.PSBoundParametersDictionary",
+                               "UnboundArguments":  "",
+                               "ScriptLineNumber":  1,
+                               "OffsetInLine":  1,
+                               "HistoryId":  1,
+                               "ScriptName":  "",
+                               "Line":  ". \u0027C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\PowerShellProject1\\PowerShellProject1.ps1\u0027 ",
+                               "PositionMessage":  "No linha:1 caractere:1\r\n+ . \u0027C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\PowerShellProject1\\ ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                               "PSScriptRoot":  "",
+                               "PSCommandPath":  null,
+                               "InvocationName":  ".",
+                               "PipelineLength":  1,
+                               "PipelinePosition":  1,
+                               "ExpectingInput":  false,
+                               "CommandOrigin":  1,
+                               "DisplayScriptPosition":  null
+                           },
+        "Position":  {
+                         "File":  "C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\PowerShellProject1\\PowerShellProject1.ps1",
+                         "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                         "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                         "StartLineNumber":  35,
+                         "StartColumnNumber":  11,
+                         "EndLineNumber":  35,
+                         "EndColumnNumber":  111,
+                         "Text":  "Test-Path -Path  C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\SystemConfigCall2.txt -PathType Leaf",
+                         "StartOffset":  826,
+                         "EndOffset":  926
+                     },
+        "FunctionName":  "\u003cScriptBlock\u003e",
+        "Command":  "PowerShellProject1.ps1",
+        "Location":  "PowerShellProject1.ps1: linha 35",
+        "Arguments":  "{}"
+    },
+    {
+        "ScriptName":  null,
+        "ScriptLineNumber":  1,
+        "InvocationInfo":  {
+                               "MyCommand":  ". \u0027C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\PowerShellProject1\\PowerShellProject1.ps1\u0027 ",
+                               "BoundParameters":  "System.Management.Automation.PSBoundParametersDictionary",
+                               "UnboundArguments":  "",
+                               "ScriptLineNumber":  0,
+                               "OffsetInLine":  0,
+                               "HistoryId":  1,
+                               "ScriptName":  "",
+                               "Line":  "",
+                               "PositionMessage":  "",
+                               "PSScriptRoot":  "",
+                               "PSCommandPath":  null,
+                               "InvocationName":  "",
+                               "PipelineLength":  2,
+                               "PipelinePosition":  1,
+                               "ExpectingInput":  false,
+                               "CommandOrigin":  0,
+                               "DisplayScriptPosition":  null
+                           },
+        "Position":  {
+                         "File":  null,
+                         "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                         "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                         "StartLineNumber":  1,
+                         "StartColumnNumber":  1,
+                         "EndLineNumber":  1,
+                         "EndColumnNumber":  93,
+                         "Text":  ". \u0027C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\PowerShellProject1\\PowerShellProject1.ps1\u0027",
+                         "StartOffset":  0,
+                         "EndOffset":  92
+                     },
+        "FunctionName":  "\u003cScriptBlock\u003e",
+        "Command":  "\u003cScriptBlock\u003e",
+        "Location":  "\u003cNenhum arquivo\u003e",
+        "Arguments":  "{}"
+    }
+]
+PS>Get-Variable -Exclude @('foreach', 'switch') | Out-PoshToolsVariable -PassThru | ConvertTo-Json -Depth 1 -WarningAction SilentlyContinue
+[
+    {
+        "VarName":  "$",
+        "VarValue":  "SilentlyContinue",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$$",
+        "Value":  "SilentlyContinue"
+    },
+    {
+        "VarName":  "?",
+        "VarValue":  "True",
+        "Type":  "System.Boolean",
+        "HasChildren":  false,
+        "Path":  "$?",
+        "Value":  true
+    },
+    {
+        "VarName":  "^",
+        "VarValue":  "Get-PSCallstack",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$^",
+        "Value":  "Get-PSCallstack"
+    },
+    {
+        "VarName":  "args",
+        "VarValue":  "",
+        "Type":  "System.Object[]",
+        "HasChildren":  true,
+        "Path":  "$args",
+        "Value":  {
+                      "value":  "",
+                      "Count":  0
+                  }
+    },
+    {
+        "VarName":  "ConfirmPreference",
+        "VarValue":  "High",
+        "Type":  "System.Management.Automation.ConfirmImpact",
+        "HasChildren":  true,
+        "Path":  "$ConfirmPreference",
+        "Value":  3
+    },
+    {
+        "VarName":  "ConsoleFileName",
+        "VarValue":  "",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$ConsoleFileName",
+        "Value":  ""
+    },
+    {
+        "VarName":  "DebugPreference",
+        "VarValue":  "SilentlyContinue",
+        "Type":  "System.Management.Automation.ActionPreference",
+        "HasChildren":  true,
+        "Path":  "$DebugPreference",
+        "Value":  0
+    },
+    {
+        "VarName":  "DTE",
+        "VarValue":  "System.__ComObject",
+        "Type":  "System.__ComObject#{04a72314-32e9-48e2-9b87-a63603454f3e}",
+        "HasChildren":  true,
+        "Path":  "$DTE",
+        "Value":  "System.__ComObject"
+    },
+    {
+        "VarName":  "Error",
+        "VarValue":  "Não é possível localizar uma variável com nome \u0027profile\u0027.",
+        "Type":  "System.Collections.ArrayList",
+        "HasChildren":  true,
+        "Path":  "$Error",
+        "Value":  "Não é possível localizar uma variável com nome \u0027profile\u0027."
+    },
+    {
+        "VarName":  "ErrorActionPreference",
+        "VarValue":  "Continue",
+        "Type":  "System.Management.Automation.ActionPreference",
+        "HasChildren":  true,
+        "Path":  "$ErrorActionPreference",
+        "Value":  2
+    },
+    {
+        "VarName":  "ErrorView",
+        "VarValue":  "NormalView",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$ErrorView",
+        "Value":  "NormalView"
+    },
+    {
+        "VarName":  "ExecutionContext",
+        "VarValue":  "System.Management.Automation.EngineIntrinsics",
+        "Type":  "System.Management.Automation.EngineIntrinsics",
+        "HasChildren":  true,
+        "Path":  "$ExecutionContext",
+        "Value":  "System.Management.Automation.EngineIntrinsics"
+    },
+    {
+        "VarName":  "false",
+        "VarValue":  "False",
+        "Type":  "System.Boolean",
+        "HasChildren":  false,
+        "Path":  "$false",
+        "Value":  false
+    },
+    {
+        "VarName":  "FormatEnumerationLimit",
+        "VarValue":  "4",
+        "Type":  "System.Int32",
+        "HasChildren":  false,
+        "Path":  "$FormatEnumerationLimit",
+        "Value":  4
+    },
+    {
+        "VarName":  "HOME",
+        "VarValue":  "C:\\Users\\lalau",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$HOME",
+        "Value":  "C:\\Users\\lalau"
+    },
+    {
+        "VarName":  "Host",
+        "VarValue":  "System.Management.Automation.Internal.Host.InternalHost",
+        "Type":  "System.Management.Automation.Internal.Host.InternalHost",
+        "HasChildren":  true,
+        "Path":  "$Host",
+        "Value":  "System.Management.Automation.Internal.Host.InternalHost"
+    },
+    {
+        "VarName":  "InformationPreference",
+        "VarValue":  "SilentlyContinue",
+        "Type":  "System.Management.Automation.ActionPreference",
+        "HasChildren":  true,
+        "Path":  "$InformationPreference",
+        "Value":  0
+    },
+    {
+        "VarName":  "input",
+        "VarValue":  "System.Collections.ArrayList+ArrayListEnumeratorSimple",
+        "Type":  "System.Collections.ArrayList+ArrayListEnumeratorSimple",
+        "HasChildren":  true,
+        "Path":  "$input",
+        "Value":  ""
+    },
+    {
+        "VarName":  "MaximumAliasCount",
+        "VarValue":  "4096",
+        "Type":  "System.Int32",
+        "HasChildren":  false,
+        "Path":  "$MaximumAliasCount",
+        "Value":  4096
+    },
+    {
+        "VarName":  "MaximumDriveCount",
+        "VarValue":  "4096",
+        "Type":  "System.Int32",
+        "HasChildren":  false,
+        "Path":  "$MaximumDriveCount",
+        "Value":  4096
+    },
+    {
+        "VarName":  "MaximumErrorCount",
+        "VarValue":  "256",
+        "Type":  "System.Int32",
+        "HasChildren":  false,
+        "Path":  "$MaximumErrorCount",
+        "Value":  256
+    },
+    {
+        "VarName":  "MaximumFunctionCount",
+        "VarValue":  "4096",
+        "Type":  "System.Int32",
+        "HasChildren":  false,
+        "Path":  "$MaximumFunctionCount",
+        "Value":  4096
+    },
+    {
+        "VarName":  "MaximumHistoryCount",
+        "VarValue":  "4096",
+        "Type":  "System.Int32",
+        "HasChildren":  false,
+        "Path":  "$MaximumHistoryCount",
+        "Value":  4096
+    },
+    {
+        "VarName":  "MaximumVariableCount",
+        "VarValue":  "4096",
+        "Type":  "System.Int32",
+        "HasChildren":  false,
+        "Path":  "$MaximumVariableCount",
+        "Value":  4096
+    },
+    {
+        "VarName":  "MyInvocation",
+        "VarValue":  "System.Management.Automation.InvocationInfo",
+        "Type":  "System.Management.Automation.InvocationInfo",
+        "HasChildren":  true,
+        "Path":  "$MyInvocation",
+        "Value":  "System.Management.Automation.InvocationInfo"
+    },
+    {
+        "VarName":  "NestedPromptLevel",
+        "VarValue":  "1",
+        "Type":  "System.Int32",
+        "HasChildren":  false,
+        "Path":  "$NestedPromptLevel",
+        "Value":  1
+    },
+    {
+        "VarName":  "now",
+        "VarValue":  "09/05/2022 16:04:15",
+        "Type":  "System.DateTime",
+        "HasChildren":  true,
+        "Path":  "$now",
+        "Value":  {
+                      "value":  "\/Date(1652123055611)\/",
+                      "DisplayHint":  2,
+                      "DateTime":  "segunda-feira, 9 de maio de 2022 16:04:15"
+                  }
+    },
+    {
+        "VarName":  "null",
+        "VarValue":  null,
+        "Type":  "",
+        "HasChildren":  false,
+        "Path":  "$null",
+        "Value":  null
+    },
+    {
+        "VarName":  "OutputEncoding",
+        "VarValue":  "System.Text.ASCIIEncoding",
+        "Type":  "System.Text.ASCIIEncoding",
+        "HasChildren":  true,
+        "Path":  "$OutputEncoding",
+        "Value":  "System.Text.ASCIIEncoding"
+    },
+    {
+        "VarName":  "PID",
+        "VarValue":  "19328",
+        "Type":  "System.Int32",
+        "HasChildren":  false,
+        "Path":  "$PID",
+        "Value":  19328
+    },
+    {
+        "VarName":  "profile",
+        "VarValue":  "C:\\Users\\lalau\\OneDrive\\Documents\\WindowsPowerShell\\PoshTools_profile.ps1",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$profile",
+        "Value":  {
+                      "value":  "C:\\Users\\lalau\\OneDrive\\Documents\\WindowsPowerShell\\PoshTools_profile.ps1",
+                      "AllUsersAllHosts":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\Profile.ps1",
+                      "AllUsersCurrentHost":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\PoshTools_profile.ps1",
+                      "CurrentUserAllHosts":  "C:\\Users\\lalau\\OneDrive\\Documents\\WindowsPowerShell\\Profile.ps1",
+                      "CurrentUserCurrentHost":  "C:\\Users\\lalau\\OneDrive\\Documents\\WindowsPowerShell\\PoshTools_profile.ps1"
+                  }
+    },
+    {
+        "VarName":  "ProgressPreference",
+        "VarValue":  "Continue",
+        "Type":  "System.Management.Automation.ActionPreference",
+        "HasChildren":  true,
+        "Path":  "$ProgressPreference",
+        "Value":  2
+    },
+    {
+        "VarName":  "PSBoundParameters",
+        "VarValue":  "System.Management.Automation.PSBoundParametersDictionary",
+        "Type":  "System.Management.Automation.PSBoundParametersDictionary",
+        "HasChildren":  true,
+        "Path":  "$PSBoundParameters",
+        "Value":  "System.Management.Automation.PSBoundParametersDictionary"
+    },
+    {
+        "VarName":  "PSCommandPath",
+        "VarValue":  "C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\PowerShellProject1\\PowerShellProject1.ps1",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$PSCommandPath",
+        "Value":  "C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\PowerShellProject1\\PowerShellProject1.ps1"
+    },
+    {
+        "VarName":  "PSCulture",
+        "VarValue":  "pt-BR",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$PSCulture",
+        "Value":  "pt-BR"
+    },
+    {
+        "VarName":  "PSDebugContext",
+        "VarValue":  "System.Management.Automation.PSDebugContext",
+        "Type":  "System.Management.Automation.PSDebugContext",
+        "HasChildren":  true,
+        "Path":  "$PSDebugContext",
+        "Value":  "System.Management.Automation.PSDebugContext"
+    },
+    {
+        "VarName":  "PSDefaultParameterValues",
+        "VarValue":  "System.Management.Automation.DefaultParameterDictionary",
+        "Type":  "System.Management.Automation.DefaultParameterDictionary",
+        "HasChildren":  true,
+        "Path":  "$PSDefaultParameterValues",
+        "Value":  "System.Management.Automation.DefaultParameterDictionary"
+    },
+    {
+        "VarName":  "PSEdition",
+        "VarValue":  "Desktop",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$PSEdition",
+        "Value":  "Desktop"
+    },
+    {
+        "VarName":  "PSEmailServer",
+        "VarValue":  "",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$PSEmailServer",
+        "Value":  ""
+    },
+    {
+        "VarName":  "PSHOME",
+        "VarValue":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$PSHOME",
+        "Value":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0"
+    },
+    {
+        "VarName":  "PSScriptRoot",
+        "VarValue":  "C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\PowerShellProject1",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$PSScriptRoot",
+        "Value":  "C:\\Users\\lalau\\source\\repos\\PowerShellProject1\\PowerShellProject1"
+    },
+    {
+        "VarName":  "PSSessionApplicationName",
+        "VarValue":  "wsman",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$PSSessionApplicationName",
+        "Value":  "wsman"
+    },
+    {
+        "VarName":  "PSSessionConfigurationName",
+        "VarValue":  "http://schemas.microsoft.com/powershell/Microsoft.PowerShell",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$PSSessionConfigurationName",
+        "Value":  "http://schemas.microsoft.com/powershell/Microsoft.PowerShell"
+    },
+    {
+        "VarName":  "PSSessionOption",
+        "VarValue":  "System.Management.Automation.Remoting.PSSessionOption",
+        "Type":  "System.Management.Automation.Remoting.PSSessionOption",
+        "HasChildren":  true,
+        "Path":  "$PSSessionOption",
+        "Value":  "System.Management.Automation.Remoting.PSSessionOption"
+    },
+    {
+        "VarName":  "PSUICulture",
+        "VarValue":  "pt-BR",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$PSUICulture",
+        "Value":  "pt-BR"
+    },
+    {
+        "VarName":  "PSVersionTable",
+        "VarValue":  "System.Collections.Hashtable",
+        "Type":  "System.Collections.Hashtable",
+        "HasChildren":  true,
+        "Path":  "$PSVersionTable",
+        "Value":  "System.Collections.Hashtable"
+    },
+    {
+        "VarName":  "PWD",
+        "VarValue":  "C:\\Users\\lalau\\source\\repos\\PowerShellProject1",
+        "Type":  "System.Management.Automation.PathInfo",
+        "HasChildren":  true,
+        "Path":  "$PWD",
+        "Value":  "C:\\Users\\lalau\\source\\repos\\PowerShellProject1"
+    },
+    {
+        "VarName":  "runAt",
+        "VarValue":  "09/05/2022 17:00:00",
+        "Type":  "System.DateTime",
+        "HasChildren":  true,
+        "Path":  "$runAt",
+        "Value":  {
+                      "value":  "\/Date(1652126400607)\/",
+                      "DisplayHint":  2,
+                      "DateTime":  "segunda-feira, 9 de maio de 2022 17:00:00"
+                  }
+    },
+    {
+        "VarName":  "ShellId",
+        "VarValue":  "Microsoft.PowerShell",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$ShellId",
+        "Value":  "Microsoft.PowerShell"
+    },
+    {
+        "VarName":  "StackTrace",
+        "VarValue":  null,
+        "Type":  "",
+        "HasChildren":  false,
+        "Path":  "$StackTrace",
+        "Value":  null
+    },
+    {
+        "VarName":  "timeFormat",
+        "VarValue":  "HH:mm",
+        "Type":  "System.String",
+        "HasChildren":  false,
+        "Path":  "$timeFormat",
+        "Value":  "HH:mm"
+    },
+    {
+        "VarName":  "true",
+        "VarValue":  "True",
+        "Type":  "System.Boolean",
+        "HasChildren":  false,
+        "Path":  "$true",
+        "Value":  true
+    },
+    {
+        "VarName":  "VerbosePreference",
+        "VarValue":  "SilentlyContinue",
+        "Type":  "System.Management.Automation.ActionPreference",
+        "HasChildren":  true,
+        "Path":  "$VerbosePreference",
+        "Value":  0
+    },
+    {
+        "VarName":  "WarningPreference",
+        "VarValue":  "Continue",
+        "Type":  "System.Management.Automation.ActionPreference",
+        "HasChildren":  true,
+        "Path":  "$WarningPreference",
+        "Value":  2
+    },
+    {
+        "VarName":  "WhatIfPreference",
+        "VarValue":  "False",
+        "Type":  "System.Boolean",
+        "HasChildren":  false,
+        "Path":  "$WhatIfPreference",
+        "Value":  false
+    }
+]

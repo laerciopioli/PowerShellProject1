@@ -1,0 +1,1 @@
+mpiexec -n 4 distribuited.exe Visual Studio 2022
